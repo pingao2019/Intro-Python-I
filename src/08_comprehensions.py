@@ -11,6 +11,8 @@ for more info regarding list comprehensions.
 # Write a list comprehension to produce the array [1, 2, 3, 4, 5]
 
 y = []
+for n in range(5):
+    y.append(n+1)
 
 print (y)
 
@@ -18,7 +20,8 @@ print (y)
 # [0, 1, 8, 27, 64, 125, 216, 343, 512, 729]
 
 y = []
-
+for n in range(10):
+    y.append(n**3)
 print(y)
 
 # Write a list comprehension to produce the uppercase version of all the
@@ -27,7 +30,8 @@ print(y)
 a = ["foo", "bar", "baz"]
 
 y = []
-
+y = [n.upper() for n in a] 
+    
 print(y)
 
 # Use a list comprehension to create a list containing only the _even_ elements

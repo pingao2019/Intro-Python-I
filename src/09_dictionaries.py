@@ -17,9 +17,7 @@ has the following keys:
 
 waypoints = [
     {
-        "lat": 43,
-        "lon": -121,
-        "name": "a place"
+        https://docs.python.org/3/tutorial/datastructures.html#dictionaries
     },
     {
         "lat": 41,
@@ -34,7 +32,10 @@ waypoints = [
 ]
 
 # Add a new waypoint to the list
-# YOUR CODE HERE
+waypoints[{"lat": 51,
+        "lon": -1623,
+        "name": "a second place" }]
+print(waypoints)
 
 # Modify the dictionary with name "a place" such that its longitude
 # value is -130 and change its name to "not a real place"
