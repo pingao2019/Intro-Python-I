@@ -17,7 +17,9 @@ has the following keys:
 
 waypoints = [
     {
-        https://docs.python.org/3/tutorial/datastructures.html#dictionaries
+        "lat": 43,
+        "lon": -121,
+        "name": "a place"
     },
     {
         "lat": 41,
@@ -30,11 +32,11 @@ waypoints = [
         "name": "a third place"
     }
 ]
-
 # Add a new waypoint to the list
-waypoints[{"lat": 51,
-        "lon": -1623,
-        "name": "a second place" }]
+a= {"lat": 51,
+        "lon": -156,
+        "name": "a second place" }
+waypoints.append(a)
 print(waypoints)
 
 # Modify the dictionary with name "a place" such that its longitude
@@ -43,6 +45,17 @@ print(waypoints)
 # waypoints list.
 
 # YOUR CODE HERE
+waypoints[0]['lon']= -130
+waypoints[0]['name']="not a real place"
 
+print(waypoints[0])
 # Write a loop that prints out all the field values for all the waypoints
-# YOUR CODE HERE
+# YOUR CODE HERE(https://stackoverflow.com/questions/54255764/how-to-print-only-1-item-from-a-dictionary)
+for item in waypoints:
+    for x,y in item.items():
+        print(x,y)
+    #print('Longitude' is waypoints['lon']).format(**item)
+    #print('Latitude' is {lat}.format(**item))
+
+    #print('Longitude: %s %i' % (item, waypoints["lon"]))
+    

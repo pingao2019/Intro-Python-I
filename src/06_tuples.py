@@ -37,8 +37,12 @@ print("Distance is: {:.2f}".format(dist(a, b)))
 # YOUR CODE HERE
 
 t = (1, 2, 5, 7, 99)
-print(t)  # Prints 1 2 5 7 99, one per line
+# Prints 1 2 5 7 99, one per line
+for n in range(5):
+    print(t[n])
+
 
 # Declare a tuple of 1 element then print it
-u = (1)  # What needs to be added to make this work?
-print(u)
+u = (1,)  # What needs to be added to make this work?
+#print("The number of elements in u is %d" %(len(u)))
+print("First tuple length : ", len(u))
