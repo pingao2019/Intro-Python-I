@@ -10,10 +10,10 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # Note: pay close attention to your current directory when trying to open "foo.txt"
 
 # YOUR CODE HERE
-import os
-print(os.getcwd())
+#import os
+#print(os.getcwd())
 file = open("foo.txt", 'r')
-print(file.readlines())
+print(file.read())
 
 file.close()
 
@@ -28,3 +28,6 @@ file2 = open("bar.txt", "w")
 file2.write("123412341234\n")
 
 file2.close()
+
+file2 = open('bar.txt','r')
+print(file2.read())
