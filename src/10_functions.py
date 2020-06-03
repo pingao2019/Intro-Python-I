@@ -3,7 +3,7 @@
 # YOUR CODE HERE
 num=[]
 for i in range(5):
-    if i%2 = 0:
+    if i%2 ==0:
         num.append(i)
 print(num)
 
@@ -15,3 +15,8 @@ num = int(num)
 
 # YOUR CODE HERE
 
+n=[]
+even_lis=[x for x in num if x % 2==0]
+print(even_lis)
+odd_lis=[x for x in num if  x % 2==1]
+print(odd_lis)
