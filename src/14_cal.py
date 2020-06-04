@@ -77,13 +77,33 @@ else:
 
 
 
+#The teacher's anwser:
+
+num_args= len(sys.argv)
+cal= calendar.TextCalendar()
+
+if num_args==1:
+  month=datetime.now().month
+  year= datetime.now().year
+  cal.prmonth(year,month)
+
+elif num_args==2:
+  month=int(sys.argv[1])
+  year= datetime.now().year
+  cal.prmonth(year, month)
 
 
+elif num_args=3:
+  month=int(sys.argv[1])
+  year= int(sys.argv[2])
+  cal.prmonth(year, month)
+
+else:
+  print("usage: cal.py[month][year]")
+  sys.exit()
 
 
-
-
-
+cal.prmonth(year, month)
 
 
 

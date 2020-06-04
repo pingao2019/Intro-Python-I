@@ -7,6 +7,8 @@ for i in range(5):
         num.append(i)
 print(num)
 
+
+
 # Read a number from the keyboard
 num = input("Enter a number: ")
 num = int(num)
