@@ -10,8 +10,16 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # Note: pay close attention to your current directory when trying to open "foo.txt"
 
 # YOUR CODE HERE
+#fp as filepoints
 #import os
 #print(os.getcwd())
+# Method1 from teacher
+with open( "foo.txt") as fp:
+    for line in fp:
+        print(line)
+
+
+# Method2
 file = open("foo.txt", 'r')
 print(file.read())
 
@@ -25,7 +33,9 @@ file.close()
 file2 = open("bar.txt", "w")
 
 
-file2.write("123412341234\n")
+file2.write("123412341234\n
+line1
+line2")
 
 file2.close()
 

@@ -51,6 +51,12 @@ waypoints[0]['name']="not a real place"
 print(waypoints[0])
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE(https://stackoverflow.com/questions/54255764/how-to-print-only-1-item-from-a-dictionary)
+
+for w in waypoints:
+    if w in waypoints:
+        w['name']= "not a real place"
+        w['lon']= -130
+
 for item in waypoints:
     for x,y in item.items():
         print(x,y)
